@@ -1,0 +1,457 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    }
+
+body {
+    width: 100%;
+    }
+
+nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background:rgb(8, 34, 51);
+    justify-content: center;
+    padding: 10px;
+    z-index: 1;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    padding: 10px;
+    text-align: end;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Rubik', 'Helvetica', sans-serif;
+    font-size: large;
+    letter-spacing: 1px;
+}
+
+li a {position: relative;}
+
+li a::after {
+    content: "";
+    position: absolute;
+    bottom:-6px;
+    height: 2px;
+    background-color: rgb(45, 171, 255);
+    width: 0;
+    transition: 1s;
+    left: 0;
+}
+
+li a:hover::after {
+content: "";
+width: 100%;
+    }
+
+.home-page {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.home-page img {
+    width: 60%;
+    }
+
+.container {
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('./resimler/pastel-bg.avif')
+}
+
+.intro-text {
+    display: flex;
+    width: 100%;
+    text-align: left;
+    font-size: 25px;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+.intro-text img {
+    width: 30%;
+}
+
+.me h1 {
+    color: rgb(45, 171, 255);
+    font-family: 'Corinthia', 'Helvetica', cursive;
+    font-size: 65px;
+}
+
+.me p {
+    color: rgb(6, 26, 39);
+    font-family:'Rubik', 'Helvetica', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.me {
+    padding: 2rem;
+}
+
+ /* Icon */
+
+    .material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+    }
+
+ /* Card */
+
+ .flex {
+    display: flex;
+ }
+ 
+ .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.185);
+    transition: 1s;
+    width: 40%;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.336);
+  }
+  
+  .flex-container {
+    padding: 2px 16px;
+  }
+
+ /* Projects */
+
+ .projects-div {
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('./resimler/fluid-abstract-background-vector.jpg')
+ }
+
+ .projects-div h1 {
+    text-align: center;
+    font-family: 'Corinthia', 'Helvetica', cursive;
+    color:rgb(11, 50, 68);
+    font-size: 65px;
+    padding: 1rem;
+ }
+
+ .flex {
+    width: 100%;
+    padding: 1rem;
+ }
+
+ .card{
+    margin-right: 1rem;
+    border: 2px groove rgba(55, 95, 105, 0.685);;
+    border-radius: 5px;
+    cursor: pointer;
+    background: white;
+ }
+
+ .card img {
+    width: 100%;
+ }
+
+ .card h4 {
+    text-align: center;
+    font-family: 'Rubik', 'Helvetica', sans-serif;
+    color:rgb(11, 50, 68);
+    font-size: 20px;
+    padding: 1rem;
+ }
+
+ /* Contact */
+
+ .contact-div {
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('./resimler/aesthetic-colorful-pastel-floral-fluid-abstract-background-vector.jpg')
+ }
+
+ .contact-div h1 {
+    color: rgb(35, 59, 65);
+    text-align: center;
+    font-family: 'Corinthia', 'Helvetica', cursive;
+    font-size: 65px;
+    padding: 1rem;
+ }
+
+ .contact-div h2 {
+    color: rgb(35, 59, 65);
+    margin-top: 15px;
+    text-align: center;
+    font-family:'Rubik', 'Helvetica', sans-serif;
+    font-size: 30px;
+ }
+
+ .icons {
+    border: 1px solid transparent;
+    border-radius: 10px;
+    width: 30%;
+    padding: 1rem;
+    margin: auto;
+ }
+
+ .icons ul {
+    display: flex;
+    list-style-type: none;
+    padding: 1rem;
+    margin-left: 10px;
+    justify-content: center;
+}
+
+.icons i {
+    margin-left: 8px;
+}
+
+ul li i[title=GitHub] {
+
+        color: rgb(40, 40, 41);
+        }
+
+ul li i[title=LinkedIn] {
+
+        color: #0073b1;
+        }
+
+.fa-xl {
+    font-size: 1.5em;
+    line-height: .04167em;
+    }
+
+
+ul li i[title=Instagram] {
+
+        color: #b62f82;
+        }
+
+ul li i[title=Twitter] {
+
+        color: rgb(29, 155, 240);
+            }
+
+.contact-form {
+    margin: 2rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.form-div {
+    font-family: 'Rubik', 'Helvetica', sans-serif;
+    color:rgb(35, 59, 65);
+    font-size: 18px;
+}
+
+input {
+    margin: 10px;
+    width: 450px;
+    height: 45px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.textarea {
+    font-family: 'Rubik', 'Helvetica', sans-serif;
+    color:rgb(35, 59, 65);
+    font-size: 18px;
+}
+
+.textarea input {
+    width: 450px;
+    height: 130px;
+}
+
+button {
+    background: rgb(35, 59, 65);
+    border: 1px solid rgb(35, 59, 65);
+    border-radius: 5px;
+    color: white;
+    font-family: 'Rubik', 'Helvetica', sans-serif;
+    font-size: 14px;
+    padding: 10px;
+    text-align: center;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+ /* Footer */
+
+ footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background:rgb(8, 34, 51);
+    border: 1px solid rgb(8, 34, 51);
+    padding: 0.5rem;
+}
+
+.footer-text {
+    color: white;
+    font-family: 'Rubik', 'Helvetica', sans-serif;
+    font-size: 12px;
+    padding: 10px;
+}
+
+/* Media */
+
+@media screen and (max-width: 1140px) {
+
+    .intro-text {
+        font-size: 18px;
+    }
+
+    .contact-div h2 {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 975px) {
+
+    .intro-text {
+        font-size: 16px;
+    }
+
+    input {
+        width: 350px;
+    }
+
+    .textarea input {
+        width: 350px;
+    }
+
+}
+
+@media screen and (max-width: 940px) {
+
+    nav {
+        position: static;
+    }
+
+    .card h4 {
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (max-width: 860px) {
+
+    .intro-text {
+        font-size: 16px;
+        flex-direction: column;
+        margin: 1rem;
+    }
+
+    .intro-text img {
+        order: 1;
+    }
+
+    .me {
+        order: 2;
+    }
+
+    .card h4 {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 765px) {
+    .contact-div h2 {
+        font-size: 20px;
+    }
+
+    input {
+        width: 250px;
+    }
+
+    .textarea input {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 655px) {
+    .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        margin-right: none;
+        width: 70%;
+        display: flex;
+        margin-bottom: 1rem;
+    }
+
+    .card h4 {
+        font-size: 12px;
+    }
+
+    .card img {
+        width:60%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    a {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 595px) {
+    .contact-div h2 {
+        font-size: 16px;
+    }
+
+    .form-div {
+        font-size: 14px;
+    }
+
+    .textarea {
+        font-size: 14px;
+    }
+
+    .contact-form {
+        flex-direction: column;
+        height: 270px;
+    }
+
+    input {
+        width: 350px;
+    }
+
+    .textarea input {
+        width: 350px;
+        height: 65px;
+    }
+}
+
+@media screen and (max-width: 555px) {
+
+    .intro-text {
+        font-size: 14px;
+    }
+}
